@@ -4,8 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script src='https://cdn.tailwindcss.com'></script>
+    <script src='https://kit.fontawesome.com/cea33d77ef.js' crossorigin='anonymous'></script>
+    <style media='all' id='fa-v4-font-face'></style>
 </head>
-<body>
+<body class="flex flex-col items-center justify-start bg-gray-200">
     
+    <header class="fixed z-50 bottom-0 bg-blue-700 h-20 w-full flex items-center justify-center" style="box-shadow: 0px -12px 67px 0px rgba(0,0,0,0.21);">
+        <nav class="w-11/12 flex items-center justify-between gap-4">
+            <a href="" class="flex items-center justify-center flex-col gap-1">
+                <i class="text-gray-100 text-2xl fa-solid fa-address-card"></i>
+                <p class="font-poppins text-gray-100 text-sm">About</p>
+            </a>
+
+             <a href="" class="flex items-center justify-center flex-col gap-1">
+                <i class="text-gray-100 text-2xl fa-solid fa-share-nodes"></i>
+                <p class="font-poppins text-gray-100 text-sm">Redes</p>
+            </a>
+            
+            <a href="" class="flex items-center justify-center flex-col gap-1">
+                <i class="text-white text-4xl fa-solid fa-circle-play"></i>
+                <p class="font-poppins text-white text-sm">Play</p>
+            </a>
+
+            <a href="" class="flex items-center justify-center flex-col gap-1">
+                <i class="text-gray-100 text-2xl fa-solid fa-compact-disc"></i>
+                <p class="font-poppins text-gray-100 text-sm">Album</p>
+            </a>
+            
+            <a href="" class="flex items-center justify-center flex-col gap-1">
+                <i class="text-gray-100 text-2xl fa-solid fa-magnifying-glass"></i>
+                <p class="font-poppins text-gray-100 text-sm">Search</p>
+            </a>
+        </nav>
+    </header>
+
+    <main class="min-h-screen w-full relative">
+        <figure class="h-56 w-full absolute top-0 -z-10">
+            <img src="assets/img/3am.jpg" class="-z-10 w-full h-full object-top object-cover grayscale">
+        </figure>
+
+        <div class="h-64 w-11/12 flex items-end justify-between">
+            <div class="w-4/6 ml-4 flex flex-col gap-2">
+                <h1 class="font-tw text-5xl text-white">3AM</h1>
+                
+                <!-- Redes -->
+                <nav class="w-full flex items-center justify-start gap-4">
+                    <a href="" class="h-10 w-10 bg-gray-200 rounded-full grid place-content-center text-xl text-blue-900"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" class="h-10 w-10 bg-gray-200 rounded-full grid place-content-center text-xl text-blue-900"><i class="fa-brands fa-spotify"></i></a>
+                    <a href="" class="h-10 w-10 bg-gray-200 rounded-full grid place-content-center text-xl text-blue-900"><i class="fa-brands fa-youtube"></i></a>
+                </nav>
+            </div>
+
+            <!-- Play Button -->
+            <div class="w-2/6 h-28 flex items-center justify-center">
+                <button class="w-full text-7xl text-cyan-300">
+                    <i class="fa-solid fa-circle-play"></i>
+                </button>
+            </div>
+        </div>
+
+        <section class="min-h-screen z-0 flex items-center justify-start flex-col w-full bg-slate-900" style="box-shadow: -1px -60px 20px 36px rgba(15,23,42,1);">
+            
+            <section class="mt-8 w-11/12 h-40 mb-4 flex flex-col items-center justify-start">
+                <div class="w-full flex items-center justify-between mb-2">
+                    <h2 class="font-montserrat text-gray-50">Latest Albums</h2>
+                    <a href="#" class="text-cyan-200 font-montserrat text-xs hover:underline">See all</a>
+                </div>
+
+                <div class="card__container w-full  overflow-y-hidden flex w-full items-center justify-center h-40">
+
+                    <div class="w-full overflow-y-hidden flex flex-col items-start justify-start">
+
+                        <div class="flex items-center justify-start overflow-y-hidden gap-4">
+                        <article class="w-24 h-28">
+                            <figure class="mb-1">
+                                <img src="assets/img/albums/lluvia.jpeg" class="h-24 w-24 object-cover rounded-sm" alt="">
+                            </figure>
+                            <h2 class="text-white font-montserrat text-xs text-center">Lluvia</h2>
+                        </article>
+
+                        <article class="w-24 h-28">
+                            <figure class="mb-1">
+                                <img src="assets/img/albums/lovecity1.jpg" class="h-24 w-24 object-cover rounded-sm" alt="">
+                            </figure>
+                            <h2 class="text-white font-montserrat text-xs text-center">Love City</h2>
+                        </article>
+
+                        <article class="w-24 h-28">
+                            <figure class="mb-1">
+                                <img src="assets/img/albums/flowcity.jpg" class="h-24 w-24 object-cover rounded-sm" alt="">
+                            </figure>
+                            <h2 class="text-white font-montserrat text-xs text-center">Flow City</h2>
+                        </article>
+
+                        <article class="w-24 h-28">
+                            <figure class="mb-1">
+                                <img src="assets/img/albums/raincity.jpg" class="h-24 w-24 object-cover rounded-sm" alt="">
+                            </figure>
+                            <h2 class="text-white font-montserrat text-xs text-center">Rain City</h2>
+                        </article>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-8 w-11/12 h-40 flex flex-col items-center justify-start">
+                <div class="w-full flex items-center justify-between mb-2">
+                    <h2 class="font-montserrat text-gray-50">Latest Singles</h2>
+                    <a href="#" class="text-cyan-200 font-montserrat text-xs hover:underline">See all</a>
+                </div>
+
+                <div class="card__container w-full flex flex-col gap-4 items-center justify-start">
+
+                    <a href="https://www.youtube.com/watch?v=ytBYHSJ6daQ" class="h-16 flex items-center justify-between w-full">
+                        <div class="flex items-center justify-center gap-3">
+                            <figure class="bg-blue-700 h-16 w-16 rounded-sm">
+                                <img src="assets/img/Singles/olvidala.webp" alt="" class="h-16 w-16 object-cover">
+                            </figure>
+                            <div class="">
+                                <h2 class="text-white font-montserrat text-md">Olvidala</h2>
+                                <p class="text-cyan-200 font-montserrat text-xs">ft Beret</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="text-cyan-200 font-montserrat text-xs hover:underline">3:15</p>
+                        </div>
+                    </a>
+
+                    <a href="https://www.youtube.com/watch?v=L6bRE3JVMZQ" class="h-16 flex items-center justify-between w-full">
+                        <div class="flex items-center justify-center gap-3">
+                            <figure class="bg-blue-700 h-16 w-16 rounded-sm">
+                                <img src="assets/img/Singles/quedate.jpg" alt="" class="h-16 w-16 object-cover">
+                            </figure>
+                            <div class="">
+                                <h2 class="text-white font-montserrat text-md">Quedate</h2>
+                                <p class="text-cyan-200 font-montserrat text-xs">ft Andrea Ferrero</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="text-cyan-200 font-montserrat text-xs hover:underline">3:46</p>
+                        </div>
+                    </a>
+
+                    <a href="https://www.youtube.com/watch?v=kHP6ZJ4BXbo" class="h-16 flex items-center justify-between w-full">
+                        <div class="flex items-center justify-center gap-3">
+                            <figure class="bg-blue-700 h-16 w-16 rounded-sm">
+                                <img src="assets/img/Singles/vacio.webp" alt="" class="h-16 w-16 object-cover">
+                            </figure>
+                            <div class="">
+                                <h2 class="text-white font-montserrat text-md">Vacio</h2>
+                                <p class="text-cyan-200 font-montserrat text-xs">ft Rsel</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="text-cyan-200 font-montserrat text-xs hover:underline">2:37</p>
+                        </div>
+                    </a>
+            
+            
+                </div>
+            </section>
+
+
+        </section>
+    </main>
 </body>
 </html>
